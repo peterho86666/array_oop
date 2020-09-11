@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdvancedMethodConcepts
+{   class print
+    {	
+	//private int[] myArray_field; 
+        public int[] myArray { get; set; } //property
+        
+	public void PrintFirstElement(int[] a)
+        {
+            Console.WriteLine("The second element is {0}.\n", a[1]);
+        }
+
+        public void parsing(int[] a)
+        {
+            PrintFirstElement(a);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            print printobj = new print();
+	    printobj.myArray = { 1, 2, 3, 4, 5 }; //how to modify this line to make the script work?
+            printobj.parsing(printobj.myArray);
+            Console.Read();
+        }
+    }
+}

@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdvancedMethodConcepts
+{   class print
+    {
+        public int[] myArray = { 1, 2, 3, 4, 5 };
+        //private int[] myA;
+        //public int[] myArray { get; set; }
+        public void PrintFirstElement(int[] a)
+        {
+            Console.WriteLine("The second element is {0}.\n", a[1]);
+        }
+
+        public void parsing(int[] a)
+        {
+            PrintFirstElement(a);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int[] myArray = { 1, 2, 3, 4, 5 };
+            //string statement;
+            print printobj = new print();
+           // printobj.myArray = { 1, 2, 3, 4, 5 };
+            printobj.parsing(printobj.myArray);
+            //printobj.PrintFirstElement(myArray);
+            //Console.WriteLine(statement);
+            Console.Read();
+        }
+    }
+}
+
+//How do i rewrite line 29 so the code works

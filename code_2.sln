@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdvancedMethodConcepts
+{   class print
+    {
+        public void PrintFirstElement(int[] a)
+        {
+            Console.WriteLine("The second element is {0}.\n", a[1]);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] myArray = { 1, 2, 3, 4, 5 };
+            print printobj = new print();
+            printobj.PrintFirstElement(myArray);
+            Console.Read();
+        }
+    }
+}
